@@ -1,7 +1,6 @@
 import {
   SHOW_JEOPARDY
 } from '../constants/index';
-import _ from 'lodash';
 
 
 export function jeopardy(state = {
@@ -12,7 +11,12 @@ export function jeopardy(state = {
 }, action = {}) {
   switch (action.type) {
   case SHOW_JEOPARDY:
-    return _.omit(action, "type");
+    return {
+      question: action.question,
+      answer: action.answer,
+      value: action.value,
+      category: action.category
+    };
   default:
     return state;
   }

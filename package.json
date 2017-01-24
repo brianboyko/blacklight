@@ -1,7 +1,7 @@
 {
-  "name": "iceland-canyouhearus",
+  "name": "boilerplate",
   "version": "1.0.0",
-  "description": "Crowdfunding website for canyouhearus.is",
+  "description": "Boilerplate for react-redux testing",
   "main": "index.js",
   "scripts": {
     "test": "mocha --recursive --compilers js:babel-register",

@@ -24,6 +24,11 @@ describe('loading express', function () {
       .get('/')
       .expect(200, done);
   });
+  it('responds to /jeopardy', function (done) {
+    request(testServer)
+      .get('/jeopardy')
+      .expect(301, done);
+  });
   it('404 everything else', function (done) {
     request(testServer)
       .get('/foo/bar')
