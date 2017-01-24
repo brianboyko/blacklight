@@ -37,11 +37,4 @@ exports.default = function (server, app) {
   // to serve the pages.
   app.use('/', _express2.default.static('./'));
   app.use('/dist', _express2.default.static('./dist'));
-  app.use('/jeopardy', _express2.default.static('./'));
-  // just a test endpoint.
-  // just a test endpoint.
-  app.get('/api/test', function (req, res) {
-    console.log(req.body);
-    res.send("We got this as your body: \n" + JSON.stringify(req.body));
-  });
 };

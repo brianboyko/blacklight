@@ -1,5 +1,8 @@
-import * as counter from './counter';
-import * as jeopardy from './jeopardy'
+// ==========================
+// ./actions/index.js
+// ==========================
 import { push } from 'react-router-redux';
+import * as todosActions from './todosActions';
 
-export default Object.assign({}, counter, jeopardy, { push });
+
+export default Object.assign({}, todosActions, { push });

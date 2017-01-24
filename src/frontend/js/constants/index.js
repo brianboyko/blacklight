@@ -1,8 +1,8 @@
-//actions
+// ==========================
+// ./actions/constants.js;
+// ==========================
 export const HYDRATE = 'HYDRATE';
 
-//languages
-export const INCREMENT_COUNTER = "INCREMENT_COUNTER";
-export const CLEAR_COUNTER = "CLEAR_COUNTER";
-export const DOUBLE_COUNTER = "DOUBLE_COUNTER";
-export const SHOW_JEOPARDY = "SHOW_JEOPARDY";
+export const ADD_TODO = 'ADD_TODO';
+export const DELETE_TODO = 'DELETE_TODO';
+export const CROSS_TODO = 'CROSS_TODO';

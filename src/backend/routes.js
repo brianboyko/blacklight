@@ -20,11 +20,4 @@ export default (server, app) => {
   // to serve the pages.
   app.use('/', express.static('./'));
   app.use('/dist', express.static('./dist'));
-  app.use('/jeopardy', express.static('./'));
-  // just a test endpoint.
-  // just a test endpoint.
-  app.get('/api/test', (req, res) => {
-    console.log(req.body);
-    res.send("We got this as your body: \n" + JSON.stringify(req.body));
-  });
 };
