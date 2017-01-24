@@ -7,7 +7,6 @@ import express from 'express';
 const testApp = express();
 import http from 'http';
 import routes from '../../src/backend/routes';
-import sinon from 'sinon';
 
 describe('loading express', function () {
   let testApp;
