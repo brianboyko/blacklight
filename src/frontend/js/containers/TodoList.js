@@ -58,8 +58,7 @@ class TodoList extends Component {
     // why use a state here when we have redux? Mostly because the changes here are
     // conceptually "local".
     this.state = {
-      inputField: "",
-      lockout: false,
+      inputField: ""
     };
     this.handleInput = this.handleInput.bind(this);
     this.handleKeyPress = this.handleKeyPress.bind(this);
@@ -104,9 +103,8 @@ class TodoList extends Component {
         <TextField id="inputField" floatingLabelText="what needs to be done?" type="text" value={this.state.inputField} onKeyPress={this.handleKeyPress} onChange={this.handleInput}/>
         <List>
           {this.props.todos.length ? this.props.todos.map((todo, index) =>
-            <div style={styles.theTodo}>
+            <div key={"key" + index} style={styles.theTodo}>
             <ListItem
-              key={"key" + index}
               leftCheckbox={
                 <Checkbox onCheck={this.handleCross.bind(this, index)} checked={todo.completed}/>
               }
